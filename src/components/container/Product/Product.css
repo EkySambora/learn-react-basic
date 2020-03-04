@@ -1,0 +1,108 @@
+.header {
+    background: #68c93e;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 100px;
+
+}
+
+.logo img {
+    width: 100px;
+
+}
+
+.troley {
+    position: relative;
+}
+
+.troley img {
+    width: 30px;
+}
+
+.count {
+    background: #2d3c8d;
+    padding: 10px;
+    border-radius: 50%;
+    min-width: 10px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0px;
+    left: -11px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 10px;
+    width: 320px;
+    border-radius: 4px;
+    justify-content: center;
+    margin-left: 32px;
+    box-shadow: -2px 7px 30px -1px rgba(0,0,0,0.31);
+}
+.card img {
+    width: 100%;
+}
+
+.counter {
+    width: 300px;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.minus {
+    background-color: #2d3c8d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 2px;
+}
+.plus {
+    background-color: #2d3c8d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.text-count {
+        padding: 18px 8px;
+        margin: 8px 0;
+        font-size: 14px;
+        text-align: center; 
+        box-sizing: border-box;
+      
+}
+.product-price {
+    color: sandybrown;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-title {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-weight: 500;
+
+}
