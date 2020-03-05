@@ -5,7 +5,7 @@ const YoutubeComp = (props) => (
   // eslint-disable-next-line react/jsx-filename-extension
   <div className="youtube-wrapper">
     <div className="img-thumb">
-      <img src="https://images.pexels.com/photos/3693701/pexels-photo-3693701.jpeg?cs=srgb&dl=close-up-photo-of-analogue-camera-3693701.jpg&fm=jpg" alt="" />
+      <img src={props.dataImg} alt="" />
       <p className="time">{props.time}</p>
     </div>
     <p className="title">{props.title}</p>
@@ -14,7 +14,8 @@ const YoutubeComp = (props) => (
 );
 YoutubeComp.defaultProps = {
   time: '00:00',
-  title: 'Tidak Ada Judul',
+  title: 'Not Found',
   desc: 'lorem ipsum ',
+  dataImg: 'https://images.pexels.com/photos/695644/pexels-photo-695644.jpeg?cs=srgb&dl=lighted-candle-695644.jpg&fm=jpg'
 };
 export default YoutubeComp;
