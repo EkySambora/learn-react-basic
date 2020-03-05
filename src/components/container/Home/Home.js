@@ -1,12 +1,13 @@
 import React from 'react';
 import YoutubeComp from '../../YoutubeComp/YoutubeComp';
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+
 
 const Home = () => (
   <div className="container">
+    <Header />
     <h2>Youtube Component</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa molestiae voluptatum, modi atque exercitationem repellat quis rem eum adipisci odio eveniet aliquam accusamus alias quam sunt labore magnam temporibus inventore.\
-    </p>
     <hr />
     <YoutubeComp
       time="7:02"
@@ -30,6 +31,7 @@ const Home = () => (
     />
     <YoutubeComp />
 
+    <Footer />
   </div>
 );
 export default Home;
