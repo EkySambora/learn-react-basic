@@ -95,7 +95,13 @@
     font-size: 18px;
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
 }
+
+.minus:active, .plus:active{
+    background: grey;
+}
+
 .plus {
     background-color: #2d3c8d; /* Green */
     border: none;
@@ -107,6 +113,7 @@
     font-size: 18px;
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
 }
 
 .text-count {
