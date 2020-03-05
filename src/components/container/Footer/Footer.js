@@ -1,11 +1,13 @@
 import React from 'react';
 
 const style = {
-    backgroundColor:'lightblue',
-    marginTop: '20px',
+    backgroundColor:'#68c93e',
+    marginTop: '40px',
     padding: '20px',
-    color:'white'
+    color:'white',
+    textAlign: 'center',
+    fontWeight: 'bold'
 }
-const Footer = () => <footer style={style}>Footer</footer>;
+const Footer = () => <footer style={style}>Copyright &copy; 2020</footer>;
 
 export default Footer;

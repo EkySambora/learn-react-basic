@@ -1,13 +1,14 @@
 import React from 'react';
-import YoutubeComp from '../../YoutubeComp/YoutubeComp';
-import Header from '../Header/Header'
+// import YoutubeComp from '../../YoutubeComp/YoutubeComp';
+// import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Product from '../Product/Product';
 
 
 const Home = () => (
   <div className="container">
-    <Header />
-    <h2>Youtube Component</h2>
+    {/* <Header /> */}
+    {/* <h2>Youtube Component</h2>
     <hr />
     <YoutubeComp
       time="7:02"
@@ -33,8 +34,8 @@ const Home = () => (
       desc="lorem ipsum dolor sit amet"
       dataImg="https://images.pexels.com/photos/3662911/pexels-photo-3662911.jpeg?cs=srgb&dl=photo-of-father-and-daughter-3662911.jpg&fm=jpg"
     />
-    <YoutubeComp />
-
+    <YoutubeComp /> */}
+    <Product />
     <Footer />
   </div>
 );
