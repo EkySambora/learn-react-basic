@@ -1,8 +1,29 @@
 import React, { Component } from 'react';
 import './Product.css'
 class Product extends Component {
-    state = {  }
+    constructor(props){
+        super(props);
+        this.state = { 
+            order: 0
+        }
+    }
+    handlePlus = () => {
+        this.setState({
+            order: this.state.order + 1
+        })
+    }
+
+    handleMinus = () => {
+        if(this.state.order > 0){
+            this.setState({
+                order: this.state.order - 1
+            })
+        }
+    }
+
     render() { 
+        const {order} = this.state;
+        const {handleMinus, handlePlus} = this;
         return ( 
             <div className="container">
                 <div className="header">
@@ -11,8 +32,7 @@ class Product extends Component {
                     </div>
                     <div className="troley">
                         <img src="https://img.icons8.com/doodle/48/000000/shopping-cart.png" alt="" />
-                        <span>3</span>
-                        
+                        <span>{order}</span>
                     </div>
                 </div>
                 <div className="card">
@@ -22,14 +42,14 @@ class Product extends Component {
                     <div className="product-title">Daging Ayam Berbumbu Rasa original Plus Tepung Crispy [a Karton - 10 Pack]</div>
                     <div className="product-price">Rp. 410.000</div>
                     <div className="counter">
-                        <button className="minus">-</button>
-                        <input type="text" className="text-count" value={3} />
-                        <button className="plus">+</button>
+                        <button className="minus" onClick={handleMinus}>-</button>
+                        <input type="text" className="text-count" value={order} />
+                        <button className="plus" onClick={handlePlus}>+</button>
                     </div>
 
                 </div>
             </div>
-         );
+        );
     }
 }
  

@@ -28,6 +28,10 @@
     position: relative;
 }
 
+.troley:hover{
+    cursor: pointer;
+}
+
 .troley img {
     width: 50px;
 }
@@ -87,6 +91,7 @@
     display: inline-block;
     font-size: 18px;
     border-radius: 4px;
+    outline: none;
 }
 .plus {
     background-color: #2d3c8d; /* Green */
@@ -98,6 +103,7 @@
     display: inline-block;
     font-size: 18px;
     border-radius: 4px;
+    outline: none;
 }
 
 .text-count {
