@@ -11,11 +11,7 @@ class Product extends Component {
 
     render() { 
         const {handleChangeOrder} = this;
-        return ( 
-            <div className="container">
-                <CardProduct onChangeOrder={(val)=> handleChangeOrder(val)} />
-            </div>
-        );
+        return <CardProduct onChangeOrder={(val)=> handleChangeOrder(val)} />;
     }
 }
  

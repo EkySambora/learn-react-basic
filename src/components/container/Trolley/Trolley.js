@@ -1,5 +1,12 @@
 import React from 'react';
 
-const Trolley = () => <h2>Kerangjang Belanja</h2>
+const Trolley = () => {
+
+    return (
+        <div className="trolley">
+            <h2>Keranjang Belanja</h2>
+        </div>
+    )
+}
 
 export default Trolley;
