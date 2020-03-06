@@ -1,0 +1,43 @@
+.header {
+    background: #68c93e;
+    display: flex;
+    width: 400px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 100px;
+
+}
+
+.logo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.trolley {
+    position: relative;
+}
+
+.trolley:hover{
+    cursor: pointer;
+}
+
+.trolley img {
+    width: 50px;
+}
+
+.trolley span{
+    position: absolute;
+        top: 23px;
+        left: -5px;
+    border-radius: 50% 50%;
+    background: #2d3c8d;
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+}
