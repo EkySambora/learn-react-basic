@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
-
+import {connect} from 'react-redux';
 import './Header.css'
 
-const Header = () => {
-  const [order] = useState(0)
+const Header = (props) => {
   return (
     <div className="header">
       <Link to="/">
@@ -15,12 +14,17 @@ const Header = () => {
       <Link to="/keranjang">
         <div className="trolley">
             <img src="https://img.icons8.com/doodle/48/000000/shopping-cart.png" alt="" />
-            <span>{order}</span>
+            <span>{props.order}</span>
         </div>
       </Link>
     </div>
   )
 }
 
+const mapStateToProps = (state) => {
+  return {
+    order: state.totalOrder
+  }
+}
 
-export default Header;
+export default connect(mapStateToProps)(Header);
