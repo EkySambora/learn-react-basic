@@ -5,41 +5,7 @@ import { PLUS_ORDER, MINUS_ORDER } from '../../../store/reducer/actionsType';
 import { formatPrice } from '../../../helpers';
 
 class CardProduct extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { 
-    //         order: 0,
-    //         stok: 20
-    //     }
-    // }
-
-    // handleCounterChange = (val) => {
-    //     this.props.onChangeOrder(val)
-    // }
-
-    // handlePlus = () => {
-    //     if(this.state.order < this.state.stok){
-    //         this.setState({
-    //             order: this.state.order + 1
-    //         }, () => {
-    //             this.handleCounterChange(this.state.order)
-    //         })
-    //     }
-    // }
-
-    // handleMinus = () => {
-    //     if(this.state.order > 0){
-    //         this.setState({
-    //             order: this.state.order - 1
-    //         }, () => {
-    //             this.handleCounterChange(this.state.order)
-    //         })
-    //     }
-    // }
-
     render() { 
-        // const {order,stok} = this.state;
-        // const {handleMinus, handlePlus} = this;
         return ( 
             <div className="card">
                 <div className="img-thumb-prod">
