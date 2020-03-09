@@ -1,40 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
+import store from './store';
 
 import IndexPage from './components/container/IndexPage/IndexPage';
-
-const globalState = {
-    totalOrder: 0,
-    stok: 10
-}
-const rootReducer = (state = globalState, action) => {
-    if(action.type === "PLUS_ORDER"){
-        if(state.totalOrder < state.stok) {
-            return {
-                ...state,
-                totalOrder: state.totalOrder + 1
-            }
-        }else{
-            alert('Stok Barang adalah Max '+ state.stok)
-        }
-    }
-
-    if(action.type === "MINUS_ORDER"){
-        if(state.totalOrder > 0) {
-            return {
-                ...state,
-                totalOrder: state.totalOrder - 1
-            }
-        }
-    }
-    return state;
-}
-
-const store = createStore(rootReducer)
 
 ReactDOM.render(
     <Provider store={store} >
