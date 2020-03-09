@@ -1,11 +1,12 @@
-import actionsType from './actionsType';
+import { PLUS_ORDER, MINUS_ORDER} from './actionsType';
 
 const globalState = {
     totalOrder: 0,
-    stok: 10
+    stok: 10,
+    price: 410000
 }
 const rootReducer = (state = globalState, action) => {
-    if(action.type === actionsType.PLUS_ORDER){
+    if(action.type === PLUS_ORDER){
         if(state.totalOrder < state.stok) {
             return {
                 ...state,
@@ -16,7 +17,7 @@ const rootReducer = (state = globalState, action) => {
         }
     }
 
-    if(action.type === actionsType.MINUS_ORDER){
+    if(action.type === MINUS_ORDER){
         if(state.totalOrder > 0) {
             return {
                 ...state,

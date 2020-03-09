@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './CardProduct.css'
 import {connect} from 'react-redux';
-import actionsType from '../../../store/reducer/actionsType';
+import { PLUS_ORDER, MINUS_ORDER } from '../../../store/reducer/actionsType';
 
 class CardProduct extends Component {
     // constructor(props) {
@@ -66,8 +66,8 @@ const mapStateToProps = (state) => {
 
 const dispatchToProps = (dispatch) => {
     return {
-        handlePlus: () => dispatch({type: actionsType.PLUS_ORDER}),
-        handleMinus: () => dispatch({type: actionsType.MINUS_ORDER}),
+        handlePlus: () => dispatch({type: PLUS_ORDER}),
+        handleMinus: () => dispatch({type: MINUS_ORDER}),
     }
 }
 export default connect(mapStateToProps, dispatchToProps)(CardProduct);
