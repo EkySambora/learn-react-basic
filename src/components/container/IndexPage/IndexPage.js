@@ -3,7 +3,7 @@ import React from 'react';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Trolley from '../Trolley/Trolley';
 
 const styled = {
