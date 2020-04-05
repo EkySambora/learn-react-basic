@@ -16,21 +16,19 @@ const styleWrapper = {
     margin: '30px auto'
 }
 
-const IndexPage = () => {
-    return (
-        <Router>
-            <div className="IndexPage" style={styled}>
-                <Header />
-                <div style={styleWrapper}>
-                    <Switch>
-                        <Route path="/" exact  component={Home} />
-                        <Route path="/Keranjang" component={Trolley} />
-                    </Switch>
-                </div>
-                <Footer />
+const IndexPage = () => (
+    <Router>
+        <div className="IndexPage" style={styled}>
+            <Header />
+            <div style={styleWrapper}>
+                <Switch>
+                    <Route path="/" exact  component={Home} />
+                    <Route path="/Keranjang" component={Trolley} />
+                </Switch>
             </div>
-        </Router>
-    )
-}
+            <Footer />
+        </div>
+    </Router>
+);
 
 export default IndexPage;
